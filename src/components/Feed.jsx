@@ -12,8 +12,8 @@ const Feed = () => {
 
     <div className='flex flex-row h-[calc(100%-56px)]'>
       <LeftNav />
-      <div className=" w-[85vw]   h-full overflow-y-auto scrollbar-hide bg-black">
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-10 py-5 '>
+      <div className="sm:w-[100vw]  h-full overflow-y-auto scrollbar-hide bg-black">
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-10 py-5 '>
            {!loding && Searchresult && Searchresult.map((item)=>{
             if(item?.type !== "video") return false;
             return(

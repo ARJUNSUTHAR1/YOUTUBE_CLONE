@@ -33,7 +33,7 @@ const Header = () => {
   const pagename = pathname?.split("/")?.filter(Boolean)?.[0];
 
   return (
-    <div className='sticky top-[0%] z-10 h-[50px] flex flex-row justify-between items-center  bg-black px-1  md:px-10 dark:bg-black'>
+    <div className='sticky w-full top-[0%] z-10 h-[50px] flex flex-row justify-between items-center  bg-black px-1  md:px-10 dark:bg-black'>
       {Loading && <Loader  />}
       <div className='flex items-center h-5'>
         {pagename !== 'video' && (
