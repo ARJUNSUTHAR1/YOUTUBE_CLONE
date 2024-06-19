@@ -25,7 +25,7 @@ const LeftNav = () => {
   }
 
   return (
-    <div className={` ${mobileMenu ? "translate-x-[-240px]":"translate-x-0"} w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative lg:relative z-10 lg:translate-x-0 md:translate-x-0  transition-all`}>
+    <div className={` ${mobileMenu ? "translate-x-0" : "translate-x-[-240px]"} w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative lg:relative z-10 lg:translate-x-0 md:translate-x-0  transition-all`}>
       <div className='flex px-5 flex-col'>
         {
           categories.map((item) => {
